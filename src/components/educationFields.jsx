@@ -97,24 +97,24 @@ function EducationFields({id}) {
     return (
         <form action="#" onSubmit={handleSubmit}>
         <div>
-            <label htmlFor="school" disabled={inputDisabled}>School Name</label>
-            <input type="text" id="school" disabled={inputDisabled} name="school"/>
+            <label htmlFor={`school-${id}`} disabled={inputDisabled}>School Name</label>
+            <input type="text" id={`school-${id}`} disabled={inputDisabled} name="school"/>
             <span className={`error-${id} school-error-${id}`}></span>
         </div>
         <div>
-            <label htmlFor="study" disabled={inputDisabled}>Field of Study</label>
-            <input type="text" id="study" disabled={inputDisabled} name="study"/>
+            <label htmlFor={`study-${id}`} disabled={inputDisabled}>Field of Study</label>
+            <input type="text" id={`study-${id}`} disabled={inputDisabled} name="study"/>
             <span className={`error-${id} study-error-${id}`}></span>
         </div>
         <div>
-            <label htmlFor="school-start" disabled={inputDisabled}>Start Date</label>
-            <input type="date" id="school-start" disabled={inputDisabled} name="school-start"/>
+            <label htmlFor={`school-start-${id}`} disabled={inputDisabled}>Start Date</label>
+            <input type="date" id={`school-start-${id}`} disabled={inputDisabled} name="school-start"/>
             <span className={`error-${id} school-start-error-${id}`}></span>
         </div>
         <div>
-            <label htmlFor="school-end" disabled={inputDisabled}>End Date</label>
+            <label htmlFor={`school-end-${id}`} disabled={inputDisabled}>End Date</label>
             <p disabled={inputDisabled}>(leave empty if in school)</p>
-            <input type="date" id="school-end" disabled={inputDisabled} name="school-end"/>
+            <input type="date" id={`school-end-${id}`} disabled={inputDisabled} name="school-end"/>
             <span className={`error-${id} school-end-error-${id}`}></span>
         </div>
         <div>
