@@ -19,6 +19,16 @@ label[disabled]::after {
     display: inline;
 }
 
+label + p {
+    margin-left: .2rem;
+    color: #2EBFA5;
+    margin-bottom: .2rem;
+}
+
+label + p[disabled] {
+    display: none;
+}
+
 fieldset {
     max-width: 800px;
     margin: 0 auto 4rem auto;
