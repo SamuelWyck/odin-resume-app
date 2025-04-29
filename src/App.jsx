@@ -2,6 +2,8 @@ import './App.css';
 import Header from './components/header';
 import GeneralForm from './components/generalForm';
 import EducationForm from './components/educationForm';
+import JobForm from './components/jobForm';
+
 
 function App() {
 
@@ -11,6 +13,7 @@ function App() {
       <main>
         <GeneralForm></GeneralForm>
         <EducationForm></EducationForm>
+        <JobForm></JobForm>
       </main>
     </>
   )
