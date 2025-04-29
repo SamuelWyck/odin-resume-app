@@ -94,12 +94,12 @@ function GeneralForm() {
         </div>
         <div>
             <label htmlFor="email" disabled={inputDisabled}>Email</label>
-            <input type="email" id="email" disabled={inputDisabled} name="email"/>
+            <input type="email" id="email" disabled={inputDisabled} placeholder="example@mail.com" name="email"/>
             <span className="error email-error"></span>
         </div>
         <div>
             <label htmlFor="phone" disabled={inputDisabled}>Phone Number</label>
-            <input type="tel" id="phone" disabled={inputDisabled} name="phone"/>
+            <input type="tel" id="phone" disabled={inputDisabled} placeholder="8008675309" name="phone"/>
             <span className="error phone-error"></span>
         </div>
         <div>
