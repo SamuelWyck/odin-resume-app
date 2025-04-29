@@ -113,7 +113,7 @@ function JobFields({id}) {
         </div>
         <div>
             <label htmlFor={`job-end-${id}`} disabled={inputDisabled}>End Date</label>
-            <p disabled={inputDisabled}>(leave empty still employed)</p>
+            <p disabled={inputDisabled}>(leave empty if still employed)</p>
             <input type="date" id={`job-end-${id}`} disabled={inputDisabled} name="job-end"/>
             <span className={`error-${id}-${id} job-end-error-${id}`}></span>
         </div>
