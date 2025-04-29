@@ -4,3 +4,11 @@
   display: grid;
   grid-template-rows: min-content 1fr;
 }
+
+main {
+  width: 100vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4rem;
+}
