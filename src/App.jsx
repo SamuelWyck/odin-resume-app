@@ -3,6 +3,7 @@ import Header from './components/header';
 import GeneralForm from './components/generalForm';
 import EducationForm from './components/educationForm';
 import JobForm from './components/jobForm';
+import Footer from './components/footer';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <EducationForm></EducationForm>
         <JobForm></JobForm>
       </main>
+      <Footer>&copy; Resume Builder</Footer>
     </>
   )
 }
