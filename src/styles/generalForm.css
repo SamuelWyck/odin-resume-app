@@ -72,6 +72,14 @@ input:disabled {
     color: black;
 }
 
+input[type="checkbox"] {
+    margin-top: .2rem;
+    width: 30px;
+    height: 30px;
+    margin-left: 50px;
+    background-color: #2EBFA5;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus {
