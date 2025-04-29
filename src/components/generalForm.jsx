@@ -47,6 +47,7 @@ function GeneralForm() {
 
     function handleSubmit(e) {
         e.preventDefault();
+        clearErrors();
 
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         const formData = new FormData(e.target);
