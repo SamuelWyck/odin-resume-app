@@ -47,6 +47,9 @@ function GeneralForm() {
 
     function handleSubmit(e) {
         e.preventDefault();
+        if (inputDisabled) {
+            return;
+        }
         clearErrors();
 
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -60,7 +63,7 @@ function GeneralForm() {
             if (value === "") {
                 handleError(key, value);
                 badData = true;
-            } else if (key === "phone" && isNaN(value)) {
+            } else if (key === "phone" && (isNaN(value) || (value.length !== 10 && value.length !== 11))) {
                 handleError(key, value);
                 badData = true;
             } else if (key === "email" && !emailPattern.test(value)) {
