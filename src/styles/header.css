@@ -72,6 +72,16 @@ nav a:hover {
     top: -10px;
 }
 
+.menu-btn:hover, .menu-btn:focus {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.menu-btn:hover {
+    transform: scale(1.1);
+}
+
 @keyframes drop-down {
     0% {opacity: 0; transform: scaleY(0);}
     70% {opacity: 9; transform: scaleY(1.1);}
